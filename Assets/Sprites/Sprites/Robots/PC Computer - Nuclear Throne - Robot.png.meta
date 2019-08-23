@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: d54789b2f1a6707468305c0c455a4b9e
+timeCreated: 1539365572
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PC Computer - Nuclear Throne - Robot_0
+    21300002: PC Computer - Nuclear Throne - Robot_1
+    21300004: PC Computer - Nuclear Throne - Robot_2
+    21300006: PC Computer - Nuclear Throne - Robot_3
+    21300008: PC Computer - Nuclear Throne - Robot_4
+    21300010: PC Computer - Nuclear Throne - Robot_5
+    21300012: PC Computer - Nuclear Throne - Robot_6
+    21300014: PC Computer - Nuclear Throne - Robot_7
+    21300016: PC Computer - Nuclear Throne - Robot_8
+    21300018: PC Computer - Nuclear Throne - Robot_9
+    21300020: PC Computer - Nuclear Throne - Robot_10
+    21300022: PC Computer - Nuclear Throne - Robot_11
+    21300024: PC Computer - Nuclear Throne - Robot_12
+    21300026: PC Computer - Nuclear Throne - Robot_13
+    21300028: PC Computer - Nuclear Throne - Robot_14
+    21300030: PC Computer - Nuclear Throne - Robot_15
+    21300032: PC Computer - Nuclear Throne - Robot_16
+    21300034: PC Computer - Nuclear Throne - Robot_17
+    21300036: PC Computer - Nuclear Throne - Robot_18
+    21300038: PC Computer - Nuclear Throne - Robot_19
+    21300040: PC Computer - Nuclear Throne - Robot_20
+    21300042: PC Computer - Nuclear Throne - Robot_21
+    21300044: PC Computer - Nuclear Throne - Robot_22
+    21300046: PC Computer - Nuclear Throne - Robot_23
+    21300048: PC Computer - Nuclear Throne - Robot_24
+    21300050: PC Computer - Nuclear Throne - Robot_25
+    21300052: PC Computer - Nuclear Throne - Robot_26
+    21300054: PC Computer - Nuclear Throne - Robot_27
+    21300056: PC Computer - Nuclear Throne - Robot_28
+    21300058: PC Computer - Nuclear Throne - Robot_29
+    21300060: PC Computer - Nuclear Throne - Robot_30
+    21300062: PC Computer - Nuclear Throne - Robot_31
+    21300064: PC Computer - Nuclear Throne - Robot_32
+    21300066: PC Computer - Nuclear Throne - Robot_33
+    21300068: PC Computer - Nuclear Throne - Robot_34
+    21300070: PC Computer - Nuclear Throne - Robot_35
+    21300072: PC Computer - Nuclear Throne - Robot_36
+    21300074: PC Computer - Nuclear Throne - Robot_37
+    21300076: PC Computer - Nuclear Throne - Robot_38
+    21300078: PC Computer - Nuclear Throne - Robot_39
+    21300080: PC Computer - Nuclear Throne - Robot_40
+    21300082: PC Computer - Nuclear Throne - Robot_41
+    21300084: PC Computer - Nuclear Throne - Robot_42
+    21300086: PC Computer - Nuclear Throne - Robot_43
+    21300088: PC Computer - Nuclear Throne - Robot_44
+    21300090: PC Computer - Nuclear Throne - Robot_45
+    21300092: PC Computer - Nuclear Throne - Robot_46
+    21300094: PC Computer - Nuclear Throne - Robot_47
+    21300096: PC Computer - Nuclear Throne - Robot_48
+    21300098: PC Computer - Nuclear Throne - Robot_49
+    21300100: PC Computer - Nuclear Throne - Robot_50
+    21300102: PC Computer - Nuclear Throne - Robot_51
+    21300104: PC Computer - Nuclear Throne - Robot_52
+    21300106: PC Computer - Nuclear Throne - Robot_53
+    21300108: PC Computer - Nuclear Throne - Robot_54
+    21300110: PC Computer - Nuclear Throne - Robot_55
+    21300112: PC Computer - Nuclear Throne - Robot_56
+    21300114: PC Computer - Nuclear Throne - Robot_57
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 367
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_10
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_13
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_14
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_17
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_18
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_19
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_20
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_21
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_22
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 288
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_24
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 288
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 288
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_26
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 288
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_27
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 288
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 288
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 225
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_30
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 225
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 225
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_35
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_36
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_37
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_39
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_40
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_41
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_42
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_43
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_44
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_45
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_47
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_48
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_49
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_50
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_51
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_52
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_53
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_54
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_55
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 335
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 320
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PC Computer - Nuclear Throne - Robot_57
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 320
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
