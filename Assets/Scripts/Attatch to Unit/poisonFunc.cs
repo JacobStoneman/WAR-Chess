@@ -22,9 +22,11 @@ public class poisonFunc : MonoBehaviour {
                     if (UTC.coordinate == coordinate)
                     {
                         interactable.maxHealth = interactable.maxHealth - ((interactable.maxHealth / 100) * 20);
-                        interactable.tileBuffCheck(coordinate);
-                        GetComponent<Interactable>().turnSwitch();
-                    }                   
+                        interactable.poisoned = true;
+                        interactable.tileBuffCheck(interactable.coord);
+                        GetComponent<Interactable>().boardCamMove.turnSwitch();
+                    }
+                    unit.GetComponent<Interactable>().unitSelected = false;
                 }
                 poisonSelected = false;
             }

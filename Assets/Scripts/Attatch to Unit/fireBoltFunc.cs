@@ -6,6 +6,7 @@ public class fireBoltFunc : MonoBehaviour {
 
     public List<GameObject> fireBoltUnits = new List<GameObject>();
     public bool fireBoltSelected;
+    public int damage = 65;
     Vector3Int coordinate;
 
 	// Update is called once per frame
@@ -21,9 +22,20 @@ public class fireBoltFunc : MonoBehaviour {
                     Interactable interactable = unit.GetComponent<Interactable>();
                     if (UTC.coordinate == coordinate)
                     {
-                        interactable.health = interactable.health - 80;
-                        GetComponent<Interactable>().turnSwitch();
+                        BoardCameraMovement.boardTile cTile = null;
+                        foreach(BoardCameraMovement.boardTile bTile in interactable.boardCamMove.allTiles)
+                        {
+                            if (coordinate == bTile.pos)
+                            {
+                                cTile = bTile;
+                                break;
+                            }
+                        }
+                        interactable.health = interactable.health - damage;
+                        interactable.boardCamMove.newLogEntry(cTile, "firebolt", unit, gameObject);
+                        GetComponent<Interactable>().boardCamMove.turnSwitch();
                     }
+                    unit.GetComponent<Interactable>().unitSelected = false;
                 }
                 fireBoltSelected = false;
             }

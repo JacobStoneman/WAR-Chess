@@ -26,7 +26,7 @@ public class enrageFunc : MonoBehaviour {
             endPoint = bcm.turnCount + 9;
             enrageEnabled = false;
             enrageExists = true;
-            interactable.turnSwitch();
+            bcm.turnSwitch();
         }
         if (enrageExists)
         {
@@ -34,11 +34,13 @@ public class enrageFunc : MonoBehaviour {
             {
                 enrageApplied = true;
                 interactable.tileBuffCheck(interactable.coord);
+                interactable.setPRating();
             } else if(bcm.turnCount > endPoint)
             {
                 enrageApplied = false;
                 enrageExists = false;
                 interactable.tileBuffCheck(interactable.coord);
+                interactable.setPRating();
             }
             
         }

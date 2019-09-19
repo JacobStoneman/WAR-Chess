@@ -26,7 +26,6 @@ public class HealthBarCalc : MonoBehaviour {
     IEnumerator waitForBM()
     {
         yield return new WaitForSeconds(0.1f);
-        print("Called");
         players.AddRange(GameObject.FindGameObjectsWithTag("Unit"));
         foreach (GameObject player in players)
         {

@@ -28,7 +28,7 @@ public class HealFunc : MonoBehaviour {
                         {
                             interactable.health = interactable.maxHealth;
                         }
-                        GetComponent<Interactable>().turnSwitch();
+                        GetComponent<Interactable>().boardCamMove.turnSwitch();
                     }
                 }
                 healSelected = false;

@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour {
 
+    public bool onWinnningTeam = false;
+    public bool poisoned = false;
+    public float pRating;
+    public float origPRating;
     public int range;
     public string faction;
     public float maxHealth;
@@ -25,7 +29,7 @@ public class Interactable : MonoBehaviour {
     public List<TileBase> prevState;
     public bool moveSelected = false;
     public BoardCameraMovement boardCamMove;
-    bool fightStarted;
+    public bool fightStarted;
     public float baseDamage;
     int baseRange;
     public bool sceneLoaded = false;
@@ -34,6 +38,10 @@ public class Interactable : MonoBehaviour {
     public Color colour;
     public bool tileBuffed;
     public bool teamBuffed;
+    List<Vector3Int> tilesInRange = new List<Vector3Int>();
+    List<Vector3Int> tempTilesInRange = new List<Vector3Int>();
+    List<Vector3Int> ignoreList = new List<Vector3Int>();
+    public BoardCameraMovement.boardTile currentTile;
 
     public void Awake()
     {
@@ -65,13 +73,114 @@ public class Interactable : MonoBehaviour {
     {
         boardCamMove = board.GetComponent<BoardCameraMovement>();
         coord = GetComponent<UnitTileCheck>().coordinate;
-        AddBlock();
+        //AddBlock();
         tileBuffCheck(coord);
+        setPRating();
+        origPRating = pRating;
+    }
+
+    public void setInhabitant()
+    {
+        boardCamMove = board.GetComponent<BoardCameraMovement>();
+        foreach (BoardCameraMovement.boardTile bTile in boardCamMove.allTiles)
+        {
+            if (coord == bTile.pos)
+            {
+                currentTile = bTile;
+                bTile.inhabitant = gameObject;
+            }
+        }
+    }
+
+    public List<Vector3Int> findPossibleMoves()
+    {
+        tilesInRange.Clear();
+        UnitTileCheck tileCheck = GetComponent<UnitTileCheck>();
+        //Vector3Int coord = tileCheck.coordinate;
+        coord = currentTile.pos;
+
+        tilesInRange.Add(new Vector3Int(coord.x, coord.y, 0));
+        for (int i = 1; i <= range; i++)
+        {
+            tempTilesInRange.Clear();
+            foreach (Vector3Int val in tilesInRange)
+            {
+                tempTilesInRange.Add(val);
+            }
+            foreach (Vector3Int tile in tempTilesInRange)
+            {
+                Vector3Int cellPos;
+                cellPos = new Vector3Int(tile.x, tile.y + 1, 0);
+                CheckCell(cellPos);
+                if (tile.y % 2 == 1)
+                {
+                    cellPos = new Vector3Int(tile.x + 1, tile.y + 1, 0);
+                    CheckCell(cellPos);
+                    cellPos = new Vector3Int(tile.x + 1, tile.y - 1, 0);
+                    CheckCell(cellPos);
+                }
+                else if (tile.y % 2 == 0)
+                {
+                    cellPos = new Vector3Int(tile.x - 1, tile.y + 1, 0);
+                    CheckCell(cellPos);
+                    cellPos = new Vector3Int(tile.x - 1, tile.y - 1, 0);
+                    CheckCell(cellPos);
+                }
+                cellPos = new Vector3Int(tile.x + 1, tile.y, 0);
+                CheckCell(cellPos);
+                cellPos = new Vector3Int(tile.x, tile.y - 1, 0);
+                CheckCell(cellPos);
+                cellPos = new Vector3Int(tile.x - 1, tile.y, 0);
+                CheckCell(cellPos);
+            }
+        }
+        tilesInRange.RemoveAt(0);
+        return tilesInRange;
+    }
+
+    void CheckCell(Vector3Int cellPos)
+    {
+        if (board.GetTile(cellPos) != null && !tilesInRange.Contains(cellPos))
+        {
+            List<GameObject> checkUnits = new List<GameObject>();
+            if (faction == "wizard")
+            {
+                checkUnits = boardCamMove.wizardUnits;
+            }
+            else if (faction == "robot")
+            {
+                checkUnits = boardCamMove.robotUnits;
+            }
+            else if (faction == "alien")
+            {
+                checkUnits = boardCamMove.alienUnits;
+            }
+            units = GameObject.FindGameObjectsWithTag("Unit");
+            foreach (GameObject unit in checkUnits)
+            {
+                Vector3Int coord = new Vector3Int(unit.GetComponent<UnitTileCheck>().coordinate.x, unit.GetComponent<UnitTileCheck>().coordinate.y, 0);
+                if (coord == cellPos)
+                {
+                    ignoreList.Add(cellPos);
+                }
+            }
+            if (!ignoreList.Contains(cellPos))
+            {
+                prevState.Add(board.GetTile(cellPos));
+                tilesInRange.Add(cellPos);
+            }
+            ignoreList.Clear();
+        }
+    }
+
+    public void setPRating()
+    {
+        pRating = ((health * damage) / 10) * range;
     }
 
     public void AddBlock()
     {
-        boardCamMove.blockedTiles.Add(new Vector3Int(coord.x, coord.y, 0));
+        boardCamMove.blockedTiles.Add(currentTile.pos);
     }
 
     [System.Serializable]
@@ -90,10 +199,13 @@ public class Interactable : MonoBehaviour {
     {
         BoardCameraMovement boardCamMove = board.GetComponent<BoardCameraMovement>();
         
-        if (boardCamMove.currentTurn == faction)
+        if (boardCamMove.currentTurn == "wizard")
         {
             units = GameObject.FindGameObjectsWithTag("Unit");
-            unitSelected = true;
+            if (faction == "wizard")
+            {
+                unitSelected = true;
+            }
             foreach (GameObject unit in units)
             {
                 if (!unit.GetComponent<Interactable>().unitSelected)
@@ -101,7 +213,10 @@ public class Interactable : MonoBehaviour {
                     unit.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
                 }
             }
-            RadialMenuSpawner.ins.SpawnMenu(this);
+            if (this.faction == "wizard")
+            {
+                RadialMenuSpawner.ins.SpawnMenu(this);
+            }
         }
     }
 
@@ -113,6 +228,7 @@ public class Interactable : MonoBehaviour {
         }
         if (health <= 0)
         {
+            print(":(");
             switch (faction){
                 case "wizard":
                     boardCamMove.wizardUnits.Remove(gameObject);
@@ -135,9 +251,10 @@ public class Interactable : MonoBehaviour {
             if (Input.GetMouseButtonUp(0))
             {
                 UnitTileCheck UTC = GetComponent<UnitTileCheck>();
-                Vector3Int newCoord = new Vector3Int(coordinate.x, coordinate.y, 0);
+                Vector3Int newCoord = new Vector3Int(coordinate.x, coordinate.y, 0); //Gets coordinate of mouse position
                 if (tileRange.Contains(newCoord))
-                {                
+                {
+                    Vector3Int prevCoord = coord;
                     coord = new Vector3Int (UTC.coordinate.x,UTC.coordinate.y,0);
                     transform.position = grid.CellToWorld(coordinate);
                     tilePrev();
@@ -179,14 +296,30 @@ public class Interactable : MonoBehaviour {
                     boardCamMove.blockedTiles.Add(newCoord);
                     coord = grid.WorldToCell(transform.position);
                     coord.z = 0;
-                    turnSwitch();
+                    foreach (BoardCameraMovement.boardTile bTile in boardCamMove.allTiles)
+                    {
+                        if (bTile.pos == coord)
+                        {
+                            foreach(BoardCameraMovement.boardTile bTile2 in boardCamMove.allTiles)
+                            {
+                                if (bTile2.pos == prevCoord)
+                                {
+                                    bTile2.inhabitant = null;
+                                    break;
+                                }
+                            }
+                            currentTile = bTile;
+                            bTile.inhabitant = gameObject;
+                            break;
+                        }
+                    }
+                    if (!fightStarted) { boardCamMove.turnSwitch(); }
+                    boardCamMove.newLogEntry(currentTile, "movement", gameObject, null); 
                 }
                 else
                 {
                     print("cannot move to this tile");
                 }
-
-                //
                 moveSelected = false;
                 tilePrev();
             }
@@ -198,7 +331,7 @@ public class Interactable : MonoBehaviour {
             fightStarted = false;
         }
     }
-    void OnEnable()
+    public void OnEnable()
     {
         if (!StaticDataScript.noFight)
         {
@@ -220,7 +353,7 @@ public class Interactable : MonoBehaviour {
                     }
                     if (convert)
                     {
-                        board.SetTile(StaticDataScript.coord, factionTile);
+                        board.GetComponent<BoardCameraMovement>().convertTile(factionTile);
                     }
                     health = StaticDataScript.winHealth;
                 }
@@ -244,6 +377,7 @@ public class Interactable : MonoBehaviour {
                 tileBuffCheck(coord);
                 boardCamMove.blockedTiles.Add(new Vector3Int(coord.x, coord.y, 0));
                 fighterNum = 0;
+                setInhabitant();
             }
         }
     }
@@ -251,12 +385,20 @@ public class Interactable : MonoBehaviour {
     {     
         if (board.GetTile(pos) == factionTile)
         {
-            damage = baseDamage;
-            damage = damage + ((damage / 100) * 20);
-            range = range + 1;
-            checkBerserker();
-            checkAll();
-            tileBuffed = true;
+            if (!tileBuffed)
+            {
+                damage = baseDamage;
+                damage = damage + ((damage / 100) * 20);
+                range = range + 1;
+                checkBerserker();
+                checkAll();
+                tileBuffed = true;
+            }
+            else
+            {
+                checkBerserker();
+                checkAll();
+            }
         }
         else
         {
@@ -285,29 +427,11 @@ public class Interactable : MonoBehaviour {
             i++;
         }
     }
-    public void turnSwitch()
-    {
-        if (boardCamMove.currentTurn == "alien")
-        {
-            boardCamMove.currentTurn = "wizard";
-        }
 
-        else if (boardCamMove.currentTurn == "wizard")
-        {
-            boardCamMove.currentTurn = "robot";
-        }
-        else if (boardCamMove.currentTurn == "robot")
-        {
-            boardCamMove.currentTurn = "alien";
-        }
-        boardCamMove.turnCount++;
-        boardCamMove.checkTurn();
-    }
     void checkAll()
     {
         if (teamBuffed)
         {
-            print("Called");
             damage = damage + 20;
         }
     }

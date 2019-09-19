@@ -26,7 +26,7 @@ public class tankFunc : MonoBehaviour {
             endPoint = bcm.turnCount + 9;
             tankEnabled = false;
             tankExists = true;
-            interactable.turnSwitch();
+            bcm.turnSwitch();
         }
         if (tankExists)
         {
@@ -36,6 +36,7 @@ public class tankFunc : MonoBehaviour {
                 interactable.health = interactable.health - (interactable.maxHealth - interactable.baseMax);
                 interactable.maxHealth = interactable.baseMax;
                 interactable.tileBuffCheck(interactable.coord);
+                interactable.setPRating();
             } else if(bcm.turnCount > endPoint)
             {
                 tankApplied = false;
@@ -43,6 +44,7 @@ public class tankFunc : MonoBehaviour {
                 interactable.health = interactable.health - (interactable.maxHealth - interactable.baseMax);
                 interactable.maxHealth = interactable.baseMax;
                 interactable.tileBuffCheck(interactable.coord);
+                interactable.setPRating();
             }
         }
 	}

@@ -9,8 +9,10 @@ public class BattleManager : MonoBehaviour {
     public GameObject player1;
     public GameObject player2;
 
+
     // Use this for initialization
     void OnEnable () {
+        /*
         print("Attacker: " + StaticDataScript.player1 + " at " + StaticDataScript.player1Health + " health and on " + StaticDataScript.player1Faction + " team");
         print("Defender: " + StaticDataScript.player2 + " at " + StaticDataScript.player2Health + " health and on " + StaticDataScript.player2Faction + " team");
         player1 = Instantiate(Resources.Load(StaticDataScript.player1), new Vector3(-2.78f, -0.39f, 0), transform.rotation) as GameObject;
@@ -27,6 +29,7 @@ public class BattleManager : MonoBehaviour {
         player2.GetComponent<BasicMovement>().damage = StaticDataScript.player2Damage;
         player2.GetComponent<SpriteRenderer>().color = StaticDataScript.player2Colour;
         player2.name = player2.name.Replace("(Clone)", "");
+        */
     }
 	
 	// Update is called once per frame

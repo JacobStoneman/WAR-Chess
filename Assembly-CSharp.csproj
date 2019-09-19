@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6C27980D-7B3A-8477-3901-74AB039B9A0B}</ProjectGuid>
+    <ProjectGuid>{B3284216-4292-75B7-DE12-92EB32AEA6EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -78,7 +78,9 @@
      <Compile Include="Assets\Scripts\FightStart.cs" />
      <Compile Include="Assets\Scripts\HexEnable.cs" />
      <Compile Include="Assets\Scripts\ImageSizeCheck.cs" />
+     <Compile Include="Assets\Scripts\InfoController.cs" />
      <Compile Include="Assets\Scripts\InstantiateBoard.cs" />
+     <Compile Include="Assets\Scripts\LogInfo.cs" />
      <Compile Include="Assets\Scripts\OriginalVersionScripts\ActiveDepthSortByY.cs" />
      <Compile Include="Assets\Scripts\OriginalVersionScripts\RadialButton.cs" />
      <Compile Include="Assets\Scripts\OriginalVersionScripts\RadialMenu.cs" />
@@ -86,23 +88,25 @@
      <Compile Include="Assets\Scripts\OriginalVersionScripts\StaticDepthSortByY.cs" />
      <Compile Include="Assets\Scripts\panel2YCheck.cs" />
      <Compile Include="Assets\Scripts\panelYCheck.cs" />
+     <Compile Include="Assets\Scripts\reset.cs" />
+     <Compile Include="Assets\Scripts\resetOnTimer.cs" />
      <Compile Include="Assets\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\StaticDataScript.cs" />
      <Compile Include="Assets\Scripts\tilemapCompress.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -305,20 +309,14 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.9f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>F:/Desktop/RAW Chess Almost Final/RAW Chess/Library/PackageCache/com.unity.purchasing@2.0.3/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>F:/Desktop/RAW Chess Almost Final/WAR-Chess/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

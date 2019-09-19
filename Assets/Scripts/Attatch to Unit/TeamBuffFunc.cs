@@ -28,7 +28,6 @@ public class TeamBuffFunc : MonoBehaviour {
             endPoint = bcm.turnCount + 6;
             buffEnabled = false;
             buffExists = true;
-            interactable.turnSwitch();
         }
         if (buffExists)
         {
@@ -40,6 +39,7 @@ public class TeamBuffFunc : MonoBehaviour {
                     interactable = unit.GetComponent<Interactable>();
                     interactable.teamBuffed = true;
                     interactable.tileBuffCheck(interactable.coord);
+                    interactable.setPRating();
                 }
             } else if (bcm.turnCount > endPoint)
             {
@@ -50,6 +50,7 @@ public class TeamBuffFunc : MonoBehaviour {
                     interactable = unit.GetComponent<Interactable>();
                     interactable.teamBuffed = false;
                     interactable.tileBuffCheck(interactable.coord);
+                    interactable.setPRating();
                 }
             }
         }

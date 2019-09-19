@@ -41,7 +41,6 @@ public class RadialMenu : MonoBehaviour {
                 selected.Invoke(selected.func,0f);
             } else
             {
-                print("no button selected");
                 interactable.unitSelected = false;
             }
 			Destroy (gameObject);

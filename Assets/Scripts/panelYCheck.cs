@@ -8,9 +8,9 @@ public class panelYCheck : MonoBehaviour {
     float midPoint;
     public GameObject left, right, panel2;
     public float speed = 8f;
-    public Sprite tileBuff, fire, enrage, tank;
-    public Image bi1, bi2, bi3;
-    public Text unitName, attack, range, abilityName, abilityText;
+    public Sprite tileBuff, fire, enrage, tank, poison;
+    public Image bi1, bi2, bi3,bi4;
+    public Text unitName, attack, range, abilityName, abilityText, pRating;
     public bool isLeft;
 
 	// Use this for initialization

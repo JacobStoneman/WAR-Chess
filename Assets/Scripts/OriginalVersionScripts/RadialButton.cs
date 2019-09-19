@@ -184,6 +184,7 @@ public class RadialButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 }
                 unit.GetComponent<fireBoltFunc>().fireBoltSelected = true;
                 unit.GetComponent<fireBoltFunc>().fireBoltUnits = fireBoltUnits;
+                break;
             }
         }
         deselectUnits();
@@ -197,12 +198,13 @@ public class RadialButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
             if (unit.GetComponent<Interactable>().unitSelected)
             {
                 unit.GetComponent<flameBombFunc>().flameBombSelected = true;
+                break;
             }
         }
         deselectUnits();
     }
 
-    void Heal()
+    void Heal() //Potentially broken
     {
         units = GameObject.FindGameObjectsWithTag("Unit");     
         List<GameObject> healableUnits = new List<GameObject>();
@@ -304,6 +306,7 @@ public class RadialButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 }
                 unit.GetComponent<poisonFunc>().poisonSelected = true;
                 unit.GetComponent<poisonFunc>().poisonUnits = poisonUnits;
+                break;
             }
         }
         deselectUnits();
